@@ -1,0 +1,35 @@
+@use 'scss/mixin';
+@use 'scss/color';
+@use 'scss/contenido';
+
+// DONE: fuente externa
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Parkinsans:wght@300&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    // DONE: margenes a cero
+    padding: 0;
+    margin: 0;
+    // DONE: fuente de navidad
+
+    // TODO: hacer lo último, es la nieve. 
+    .snow{display: none;}
+}
+
+// DONE: el body un flex columna con altura al 100%
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header, footer{
+    // DONE: mixin para el color de texto y el back
+    @include mixin.header-footer(color.$color-text, color.$color-back);
+    // DONE: texto centrado
+    text-align: center;
+    // DONE: por encima del body
+    z-index: 999;
+    font-family: "Mountains of Christmas",  serif;
+}
+
+// FIXME: creo que el style.scss está terminado, revisar por si acaso.

@@ -1,0 +1,7 @@
+@use 'color';
+// TODO: mixin header y footer
+
+@mixin header-footer($text-color, $back){
+    color: $text-color;
+    background: $back;
+}

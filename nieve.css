@@ -1,0 +1,446 @@
+.initial-snow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.initial-snow > * {
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  top: -60px;
+}
+
+@keyframes snowfall {
+  0% {
+    transform: translateX(var(--left-ini));
+    top: -30px;
+  }
+  100% {
+    transform: translateX(var(--left-end));
+    top: 100%;
+  }
+}
+.snow:nth-child(2n) {
+  filter: blur(1px);
+  font-size: 18.5277050741px;
+}
+
+.snow:nth-child(4n) {
+  filter: blur(2px);
+  font-size: 27.4475797355px;
+}
+
+.snow:nth-child(6n) {
+  filter: blur(3px);
+  font-size: 17.0688325881px;
+}
+
+.snow:nth-child(1) {
+  --left-ini: 2vw;
+  --left-end: 3vw;
+  left: 20vw;
+  animation: snowfall 9s linear infinite;
+  animation-delay: 3s;
+}
+
+.snow:nth-child(2) {
+  --left-ini: -2vw;
+  --left-end: 0vw;
+  left: 44vw;
+  animation: snowfall 15s linear infinite;
+  animation-delay: 5s;
+}
+
+.snow:nth-child(3) {
+  --left-ini: 2vw;
+  --left-end: -1vw;
+  left: 56vw;
+  animation: snowfall 10s linear infinite;
+  animation-delay: 1s;
+}
+
+.snow:nth-child(4) {
+  --left-ini: 10vw;
+  --left-end: 5vw;
+  left: 36vw;
+  animation: snowfall 10s linear infinite;
+  animation-delay: 3s;
+}
+
+.snow:nth-child(5) {
+  --left-ini: -2vw;
+  --left-end: -2vw;
+  left: 26vw;
+  animation: snowfall 9s linear infinite;
+  animation-delay: 2s;
+}
+
+.snow:nth-child(6) {
+  --left-ini: 6vw;
+  --left-end: 9vw;
+  left: 84vw;
+  animation: snowfall 14s linear infinite;
+  animation-delay: 1s;
+}
+
+.snow:nth-child(7) {
+  --left-ini: -6vw;
+  --left-end: 2vw;
+  left: 83vw;
+  animation: snowfall 13s linear infinite;
+  animation-delay: 7s;
+}
+
+.snow:nth-child(8) {
+  --left-ini: -8vw;
+  --left-end: 7vw;
+  left: 36vw;
+  animation: snowfall 10s linear infinite;
+  animation-delay: 1s;
+}
+
+.snow:nth-child(9) {
+  --left-ini: 4vw;
+  --left-end: 1vw;
+  left: 31vw;
+  animation: snowfall 10s linear infinite;
+  animation-delay: 7s;
+}
+
+.snow:nth-child(10) {
+  --left-ini: 7vw;
+  --left-end: 6vw;
+  left: 77vw;
+  animation: snowfall 10s linear infinite;
+  animation-delay: 9s;
+}
+
+.snow:nth-child(11) {
+  --left-ini: -2vw;
+  --left-end: 5vw;
+  left: 38vw;
+  animation: snowfall 15s linear infinite;
+  animation-delay: 5s;
+}
+
+.snow:nth-child(12) {
+  --left-ini: 1vw;
+  --left-end: 8vw;
+  left: 40vw;
+  animation: snowfall 15s linear infinite;
+  animation-delay: 2s;
+}
+
+.snow:nth-child(13) {
+  --left-ini: -4vw;
+  --left-end: -9vw;
+  left: 52vw;
+  animation: snowfall 13s linear infinite;
+  animation-delay: 1s;
+}
+
+.snow:nth-child(14) {
+  --left-ini: 4vw;
+  --left-end: 4vw;
+  left: 66vw;
+  animation: snowfall 12s linear infinite;
+  animation-delay: 4s;
+}
+
+.snow:nth-child(15) {
+  --left-ini: 6vw;
+  --left-end: 8vw;
+  left: 17vw;
+  animation: snowfall 13s linear infinite;
+  animation-delay: 4s;
+}
+
+.snow:nth-child(16) {
+  --left-ini: 2vw;
+  --left-end: 9vw;
+  left: 16vw;
+  animation: snowfall 9s linear infinite;
+  animation-delay: 3s;
+}
+
+.snow:nth-child(17) {
+  --left-ini: -3vw;
+  --left-end: -2vw;
+  left: 1vw;
+  animation: snowfall 12s linear infinite;
+  animation-delay: 6s;
+}
+
+.snow:nth-child(18) {
+  --left-ini: 8vw;
+  --left-end: 0vw;
+  left: 94vw;
+  animation: snowfall 15s linear infinite;
+  animation-delay: 6s;
+}
+
+.snow:nth-child(19) {
+  --left-ini: 8vw;
+  --left-end: 8vw;
+  left: 70vw;
+  animation: snowfall 11s linear infinite;
+  animation-delay: 8s;
+}
+
+.snow:nth-child(20) {
+  --left-ini: 4vw;
+  --left-end: -2vw;
+  left: 44vw;
+  animation: snowfall 10s linear infinite;
+  animation-delay: 9s;
+}
+
+.snow:nth-child(21) {
+  --left-ini: -9vw;
+  --left-end: 5vw;
+  left: 1vw;
+  animation: snowfall 13s linear infinite;
+  animation-delay: 6s;
+}
+
+.snow:nth-child(22) {
+  --left-ini: 0vw;
+  --left-end: -4vw;
+  left: 65vw;
+  animation: snowfall 15s linear infinite;
+  animation-delay: 7s;
+}
+
+.snow:nth-child(23) {
+  --left-ini: -5vw;
+  --left-end: 8vw;
+  left: 4vw;
+  animation: snowfall 13s linear infinite;
+  animation-delay: 2s;
+}
+
+.snow:nth-child(24) {
+  --left-ini: 3vw;
+  --left-end: -4vw;
+  left: 78vw;
+  animation: snowfall 13s linear infinite;
+  animation-delay: 5s;
+}
+
+.snow:nth-child(25) {
+  --left-ini: -9vw;
+  --left-end: 10vw;
+  left: 5vw;
+  animation: snowfall 9s linear infinite;
+  animation-delay: 2s;
+}
+
+.snow:nth-child(26) {
+  --left-ini: -9vw;
+  --left-end: -3vw;
+  left: 50vw;
+  animation: snowfall 13s linear infinite;
+  animation-delay: 1s;
+}
+
+.snow:nth-child(27) {
+  --left-ini: 4vw;
+  --left-end: -6vw;
+  left: 95vw;
+  animation: snowfall 10s linear infinite;
+  animation-delay: 3s;
+}
+
+.snow:nth-child(28) {
+  --left-ini: -6vw;
+  --left-end: 2vw;
+  left: 19vw;
+  animation: snowfall 15s linear infinite;
+  animation-delay: 4s;
+}
+
+.snow:nth-child(29) {
+  --left-ini: -5vw;
+  --left-end: -6vw;
+  left: 98vw;
+  animation: snowfall 15s linear infinite;
+  animation-delay: 1s;
+}
+
+.snow:nth-child(30) {
+  --left-ini: -4vw;
+  --left-end: 9vw;
+  left: 80vw;
+  animation: snowfall 12s linear infinite;
+  animation-delay: 6s;
+}
+
+.snow:nth-child(31) {
+  --left-ini: 8vw;
+  --left-end: -1vw;
+  left: 60vw;
+  animation: snowfall 9s linear infinite;
+  animation-delay: 2s;
+}
+
+.snow:nth-child(32) {
+  --left-ini: 7vw;
+  --left-end: 3vw;
+  left: 8vw;
+  animation: snowfall 11s linear infinite;
+  animation-delay: 4s;
+}
+
+.snow:nth-child(33) {
+  --left-ini: -9vw;
+  --left-end: -8vw;
+  left: 61vw;
+  animation: snowfall 12s linear infinite;
+  animation-delay: 4s;
+}
+
+.snow:nth-child(34) {
+  --left-ini: -6vw;
+  --left-end: 6vw;
+  left: 2vw;
+  animation: snowfall 14s linear infinite;
+  animation-delay: 9s;
+}
+
+.snow:nth-child(35) {
+  --left-ini: -8vw;
+  --left-end: -1vw;
+  left: 67vw;
+  animation: snowfall 15s linear infinite;
+  animation-delay: 3s;
+}
+
+.snow:nth-child(36) {
+  --left-ini: -6vw;
+  --left-end: -1vw;
+  left: 26vw;
+  animation: snowfall 11s linear infinite;
+  animation-delay: 6s;
+}
+
+.snow:nth-child(37) {
+  --left-ini: 5vw;
+  --left-end: 4vw;
+  left: 100vw;
+  animation: snowfall 11s linear infinite;
+  animation-delay: 1s;
+}
+
+.snow:nth-child(38) {
+  --left-ini: 5vw;
+  --left-end: -5vw;
+  left: 55vw;
+  animation: snowfall 10s linear infinite;
+  animation-delay: 4s;
+}
+
+.snow:nth-child(39) {
+  --left-ini: 10vw;
+  --left-end: -1vw;
+  left: 75vw;
+  animation: snowfall 10s linear infinite;
+  animation-delay: 3s;
+}
+
+.snow:nth-child(40) {
+  --left-ini: 0vw;
+  --left-end: 3vw;
+  left: 17vw;
+  animation: snowfall 14s linear infinite;
+  animation-delay: 4s;
+}
+
+.snow:nth-child(41) {
+  --left-ini: 2vw;
+  --left-end: 6vw;
+  left: 68vw;
+  animation: snowfall 14s linear infinite;
+  animation-delay: 4s;
+}
+
+.snow:nth-child(42) {
+  --left-ini: 0vw;
+  --left-end: -2vw;
+  left: 23vw;
+  animation: snowfall 10s linear infinite;
+  animation-delay: 8s;
+}
+
+.snow:nth-child(43) {
+  --left-ini: 1vw;
+  --left-end: 10vw;
+  left: 43vw;
+  animation: snowfall 9s linear infinite;
+  animation-delay: 4s;
+}
+
+.snow:nth-child(44) {
+  --left-ini: 2vw;
+  --left-end: 9vw;
+  left: 65vw;
+  animation: snowfall 11s linear infinite;
+  animation-delay: 7s;
+}
+
+.snow:nth-child(45) {
+  --left-ini: -2vw;
+  --left-end: -9vw;
+  left: 83vw;
+  animation: snowfall 10s linear infinite;
+  animation-delay: 9s;
+}
+
+.snow:nth-child(46) {
+  --left-ini: 10vw;
+  --left-end: -1vw;
+  left: 68vw;
+  animation: snowfall 9s linear infinite;
+  animation-delay: 5s;
+}
+
+.snow:nth-child(47) {
+  --left-ini: -1vw;
+  --left-end: 6vw;
+  left: 94vw;
+  animation: snowfall 12s linear infinite;
+  animation-delay: 6s;
+}
+
+.snow:nth-child(48) {
+  --left-ini: 4vw;
+  --left-end: 0vw;
+  left: 76vw;
+  animation: snowfall 15s linear infinite;
+  animation-delay: 4s;
+}
+
+.snow:nth-child(49) {
+  --left-ini: 5vw;
+  --left-end: -9vw;
+  left: 25vw;
+  animation: snowfall 9s linear infinite;
+  animation-delay: 6s;
+}
+
+.snow:nth-child(50) {
+  --left-ini: 0vw;
+  --left-end: -7vw;
+  left: 1vw;
+  animation: snowfall 14s linear infinite;
+  animation-delay: 9s;
+}
+
+main {
+  position: relative;
+  margin: 1rem;
+}
+
+/*# sourceMappingURL=contenido.css.map */
