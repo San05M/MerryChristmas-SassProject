@@ -2,19 +2,16 @@
 @use "color";
 // FIXME: contenido repasar, pero creo que comlpetado
 main {
-  // DONE: estará en posición relativa con un margen.
   position: relative;
   margin: 2rem;
 }
 
 section {
-  // DONE: El section será un grid que se repite con un tamaño entre 420px y 1fr.
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
   padding: 1.5rem;
   gap: 2rem;
 
-  // DONE: Separa los hijos entre sí. Y dale una altura del 100%
   article {
     height: fit-content;
     border-radius: 10px;
@@ -51,7 +48,7 @@ section {
       figure {
         font-variant: small-caps;
       }
-      // DONE: IMG a 400px
+  
       img {
         width: 400px;
         height: auto;
@@ -68,6 +65,5 @@ section {
             text-align: justify;
           }
     }
-    // DONE: El figure de la imagen está a small-caps
   }
 }
