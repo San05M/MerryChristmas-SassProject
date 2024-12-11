@@ -9,12 +9,13 @@
     justify-content: space-between;
     padding: 1rem;
 
-    h1{
-        margin-left: 5px;
-        &::before, &::after{
-            content: url("public/icons/christmas-tree.png");
-            padding: 1rem;
-          }
+    h1 {
+      margin-left: 5px;
+      &::before,
+      &::after {
+        content: url("icons/christmas-tree.png");
+        padding: 1rem;
+      }
     }
 
     nav {
@@ -22,14 +23,26 @@
       margin-left: 40px;
       z-index: 1000;
 
-        ul {
-            list-style: none;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+          li {
+            position: relative;
+
+            ul.subitems {
+              height: 0;
+              opacity: 0;
+              transition: height 0.5s ease-out;
+              interpolate-size: allow-keywords;
+              overflow: hidden;
+            }
+          
         }
-      
+      }
     }
   }
 }
