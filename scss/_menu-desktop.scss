@@ -1,18 +1,35 @@
-@use 'mixin';
-@use 'color';
+@use "mixin";
+@use "color";
 
-@media (min-width: 768px){
-    header{
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
 
-        ul{
-            display:flex;
-            flex-direction: row;
-
-        flex-grow: 1;
-        margin-top: 0;
-        width: 100hv;
-        z-index: 100;
-        }
-
+    h1{
+        margin-left: 5px;
+        &::before, &::after{
+            content: url("public/icons/christmas-tree.png");
+            padding: 1rem;
+          }
     }
+
+    nav {
+      flex-grow: 1;
+      margin-left: 40px;
+      z-index: 1000;
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+      
+    }
+  }
 }
