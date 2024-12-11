@@ -52,3 +52,6 @@ coverage/
 *.bak
 *.swp
 *~
+
+/public
+*.jpg
