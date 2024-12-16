@@ -2,6 +2,7 @@
 @use 'scss/color';
 @use 'scss/contenido';
 @use 'scss/menu';
+@use 'scss/nieve';
 // DONE: fuente externa
 @import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Parkinsans:wght@300&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -10,9 +11,8 @@
     padding: 0;
     margin: 0;
     // DONE: fuente de navidad
-
+    interpolate-size: allow-keywords;
     // TODO: hacer lo último, es la nieve. 
-    .snow{display: none;}
 }
 
 // DONE: el body un flex columna con altura al 100%
@@ -20,6 +20,7 @@ body{
     display: flex;
     flex-direction: column;
     height: 100vh;
+    justify-content: space-between;
 }
 
 header, footer{

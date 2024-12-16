@@ -1,0 +1,46 @@
+@use 'sass:math';
+
+.initial-snow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .initial-snow > * {
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: -60px;
+    z-index: 10000;
+  }
+  
+  @keyframes snowfall {
+    0% {
+      transform: translateX(var(--left-ini));
+      top: -30px;
+    }
+    100% {
+      transform: translateX(var(--left-end));
+      top: 100%;
+    }
+  }
+
+  @for $i from 1 through 3 {
+    .snow:nth-child(#{$i*2}n) {
+        filter: blur(#{$i}px);
+        font-size: math.random()*30px;
+      }
+}
+
+@for $i from 1 through 50 {
+    .snow:nth-child(#{$i}) {
+        --left-ini: #{math.random(20)-10}vw;
+        --left-end: #{math.random(20)-10}vw;
+        left: #{math.random(100)}vw;
+        animation: snowfall #{math.random(5)*5}s linear infinite;
+        animation-delay: #{math.random(9)}s;
+      }
+}
