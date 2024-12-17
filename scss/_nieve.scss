@@ -11,7 +11,7 @@
 
   .initial-snow > * {
     font-size: 50px;
-    color: rgb(0, 0, 0);
+    color: rgb(119, 197, 200);
     position: absolute;
     top: -60px;
     z-index: 10000;
@@ -28,19 +28,19 @@
     }
   }
 
-  @for $i from 1 through 3 {
+  @for $i from 1 through 4 {
     .snow:nth-child(#{$i*2}n) {
         filter: blur(#{$i}px);
         font-size: math.random()*30px;
       }
 }
 
-@for $i from 1 through 50 {
+@for $i from 1 through 51 {
     .snow:nth-child(#{$i}) {
         --left-ini: #{math.random(20)-10}vw;
         --left-end: #{math.random(20)-10}vw;
         left: #{math.random(100)}vw;
-        animation: snowfall #{math.random(5)*5}s linear infinite;
+        animation: snowfall #{math.random(5)*10}s linear infinite;
         animation-delay: #{math.random(9)}s;
       }
 }
