@@ -5,3 +5,12 @@
     color: $text-color;
     background: $back;
 }
+
+@mixin primary-colors($color, $background) {
+    color: $color;
+    background: $background;
+  }
+
+  @mixin animation($nombre, $duration, $timing: linear) {
+    animation: $nombre $duration $timing;
+  }

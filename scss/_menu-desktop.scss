@@ -26,13 +26,22 @@
       ul {
         list-style: none;
         display: flex;
-        gap: 2rem;
+        gap: 5rem;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
 
         li {
           position: relative;
+          text-align: center;
+          
+          &:hover {
+            animation: iluminar 0.5s ease-in-out;
+    
+            @include mixin.primary-colors(
+              color.$color-text,
+              color.$color-back-hover
+            );
+          }
 
           ul.subitems {
             height: 0;
